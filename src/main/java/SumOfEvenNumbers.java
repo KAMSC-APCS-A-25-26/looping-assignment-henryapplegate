@@ -8,7 +8,7 @@ public class SumOfEvenNumbers {
         int num = sc.nextInt();
 
         if(num<2){
-            System.out.println("Error: Input must be 2 or greater");
+            System.out.println("Error: Input must be 2 or greater.");
         }
         else{
             int sum = 0;
