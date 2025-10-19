@@ -8,17 +8,25 @@ public class NumberTrianglePattern {
         System.out.println("Enter a positive integer:");
         int num = sc.nextInt();
 
-        for(int i = 1; i <= num; i++){
-            for(int j = 1; j <= i; j++){
-                if(j==i){
-                    System.out.print(j);
-                }
-                else{
-                    System.out.print(j+ " ");
-                }
-            }
-            System.out.println();
+        if(num<0){
+            System.out.println("Invalid Input");
         }
+
+        else{
+            for(int i = 1; i <= num; i++){
+                for(int j = 1; j <= i; j++){
+                    if(j==i){
+                        System.out.print(j);
+                    }
+                    else{
+                        System.out.print(j+ " ");
+                    }
+                }
+                System.out.println();
+            }
+        }
+
+
 
         
         // TODO: Step 2 - Generate the number triangle pattern
